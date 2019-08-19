@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* body{
+    background: #282828;
+			background: linear-gradient(-45deg, #EE7752,#E73c7E,#23A6D5,#23D5AB);
+			background-size: 400% 400%;
+			animation: Gradient 15s linear infinite;
+			 margin: 20px; 
+			 padding: 30px;
+}
+
+@-webkit-keyframes Gradient{
+	0%{
+		background-position: 0% 50%
+	}
+	50%{
+		background-position: 100% 50%
+	}
+	100%{
+		background-position: 0% 50%
+	}
+} */
+
+
+html,body{
+    /* height: 100%;
+    width: 100%; */
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 18px;
+    color: #222;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.banner{
+    display: flex;
+    align-items: center;
+}
+.banner img{
+    height: 32%;
+    width: 32%;
+    margin: 3%;
+}
+
+.banner h2{
+    margin-left: 10%;
+    color: blue;
+    font-weight: 1000;
+}
+
+.main_text{
+    color: #222;
+    font-weight: 1000;
+}
+.Nav{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 2.5px 4px rgba(0, 0, 0, .4);
+    position: sticky;
+    top: 0;
+    background: linear-gradient(top, white 0%,whitesmoke 100%);
+    background: -moz-linear-gradient(top, white 0%,whitesmoke 100%);
+    background: -webkit-linear-gradient(top, whitesmoke 0%, aliceblue 100%);
+}
+.container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 5%;
+}
+.container p{
+    font-weight: 600;
+    margin-bottom: 3%;
+    word-spacing: 7px;
+    font-size: 22px;
+}
+.bgimg{
+    background-image: url(https://cdn-images-1.medium.com/max/1600/1*0tFUzw7gdW4SZTeUBp_fLQ.png);
+    width: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+    height: 500px;
+    margin-top: 5%;
+    /* -webkit-filter: blur(5px);
+  	filter: blur(5px); */
+}
+.bgimg h2{
+    color: rgb(97, 34, 34);
+    align-content: center;
+    font-weight: bold;
+    border: 3px solid rgb(97, 34, 34);;
+    padding: 5%;
+    text-align: center;
+    margin: 5%;
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border-bottom: 2px solid grey;
+}
+.fa-android{
+    font-size: 4em;
+    padding: 2% 0% 1.2% 50%;
+    color: #78C257;
+}
+.mobile{
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.mobile p{
+    margin-left: 35%;
+    text-align: center;
+    width: 40%;
+    font-weight: bold;
+}
+.web .fa-code{
+    font-size: 4em;
+    padding: 2% 0% 2.5% 30%;
+    color: orange;
+}
+.web p{
+    margin-left: 20%;
+    text-align: center;
+    width: 45%;
+    font-weight: bold;
+}
+.container3{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(top, white 0%,whitesmoke 100%);
+    background: -moz-linear-gradient(top, white 0%,whitesmoke 100%);
+    background: -webkit-linear-gradient(top, whitesmoke 0%, whitesmoke 100%);
+}
+.text{
+    margin: 5%;
+    width: 50%;
+    text-align: center;
+}
+.text h2{
+    font-size: 40px;
+}
+.image{
+    margin: 7% 5% 5% 5%;
+}
+/* .image img{
+    height: 80%;
+} */
+.know{
+    padding: .6% .8%;
+    background: -webkit-linear-gradient(top, white 0%,cyan 100%);
+    border: none;
+    color: rgb(97, 34, 34);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+.yt{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.vdo iframe{
+    margin: 5% 2% 2% 3%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    width: 130%;
+    height: 70%;
+}
+.text1{
+    margin: 5%;
+    width: 50%;
+    text-align: center;
+}
+.text1 h2{
+    font-size: 35px;
+}
+.connect{
+    text-align: center;
+    margin-bottom: 2%;
+    
+}
+.connect h1{
+    padding-top: 3%;
+    font-size: 70px;
+}
+.elements{
+    margin: 1.2% 1.2% 0 1.2%;
+}
+.connect i{
+    font-size: 3em;
+    margin: 2%;
+}
+
+.elements .fa-code{
+    text-decoration: none;
+    color: orange;
+}
+.elements .fa-youtube{
+    color: red;
+}
+.elements .fa-github{
+    color: black;
+}
+.elements .fa-facebook{
+    color: #005F8D;
+}
+.elements .fa-twitter{
+    color: #1DA1F3;
+}
+.elements .fa-reddit{
+    color: #FF420A;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: darkgrey;
+}
+
+.scn1 h2{
+    margin-right: 32px;
+    font-size: 30px;
+}
+/* .click{
+    background-color: cyan;
+    border: none;
+    color: rgb(97, 34, 34);
+    padding: .4% .6%;
+    text-decoration: none;
+    display: inline;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 3% 47%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, white 0%,cyan 100%);
+} */
+/* .myDiv{
+    display: block;
+} */
+/* .slideUp{
+    animation-name: slide;
+    animation-duration: 5sec;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes slide{
+   from{transform: translateX(-200px)}
+   50%{transform: translateX(100px)}
+   to{transform: translateX(1000px)}
+} */
+
+
+/* Media Queries */
+
+@media(max-width:992px){
+    .Nav{
+        max-width: 100%;
+    }
+    
+    .vdo iframe{
+        margin: 6% 3% 3% 4%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        width: 90%;
+        height: 70%;
+    }
+    .text1 h2{
+        font-size: 30px;
+    }
+    .connect h1{
+        font-size: 30px;
+    }
+    .connect i{
+        font-size: 2em;
+        margin: 1.2%;
+    }
+    .mobile p{
+        margin-left: 5%;
+        text-align: center;
+        width: 70%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .web p{
+        margin-left: 5%;
+        text-align: center;
+        width: 70%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+@media(max-width:768px){
+    .vdo iframe{
+        margin: 6% 3% 3% 4%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        width: 90%;
+        height: 70%;
+    }
+    .text1 h2{
+        font-size: 30px;
+    }
+    .connect h1{
+        font-size: 30px;
+    }
+    .connect i{
+        font-size: 2em;
+        margin: 1.2%;
+    }
+    .container3{
+        display: inline;
+    }
+    .text{
+        width: 80%;
+        text-align: center;
+    }
+    .text h2{
+        font-size: 25px;
+    }
+    .scn1 h2{
+        margin-right: 32px;
+        font-size: 20px;
+    }
+    .mobile p{
+        margin-left: 5%;
+        text-align: center;
+        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .web p{
+        margin-left: 5%;
+        text-align: center;
+        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+@media(max-width:550px){
+    .container{
+        width: 90%;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .bgimg h2{
+        font-size: 15px;
+    }
+    .container3{
+        display: inline;
+    }
+    .text{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .text h2{
+        font-size: 35px;
+    }
+    .image img{
+        height: 200px;
+    }
+    .container2{
+        display: inline;
+    }
+    .mobile{
+        margin-top: 10%;
+    }
+    .mobile a{
+        margin-right: 12%;
+    }
+    .mobile p{
+        margin-left: 5%;
+        text-align: center;
+        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .web a i{
+        margin-left: 15%;
+    }
+    .web p{
+        margin-left: 5%;
+        text-align: center;
+        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 8%;
+    }
+    .vdo iframe{
+        margin: 6% 3% 3% 4%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        width: 90%;
+        height: 30%;
+    }
+    .yt{
+        display: inline;
+    }
+    .text1{
+        margin: 5%;
+        width: 90%;
+        text-align: center;
+    }
+    .text1 h2{
+        font-size: 35px;
+    }
+    .text1 p{
+        font-size: 18px;
+    }
+    .connect h1{
+        font-size: 20px;
+    }
+    .connect i{
+        font-size: 1.2em;
+        margin: 1.2%;
+    }
+    .scn1 h2{
+        margin-right: 32px;
+        font-size: 12px;
+    }
+}
